@@ -298,7 +298,7 @@ padding: 0px 35px 30px;
     letter-spacing: 0.1px;
     color: #5e5e5e;
     border-bottom: 1px solid #5e5e5e;
-    margin-right: 55px;
+    margin-right: 35px;
 }
 .company{
     background-image: url(../img/fon_1.jpg);
@@ -492,6 +492,25 @@ color: #fff;
 .clients_slider{
     max-width: 555px;
     width: 100%;
+    box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+    background-color: rgb(255, 255, 255);
+    padding: 60px 35px 45px 70px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+}
+.clients_slider::before{
+    font-family: 'icomoon' !important;
+    content: "\e902";
+    color: #fff;
+    font-size: 16px;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ffc222;
+    position: absolute;
+    top: 0;
+    left: 70px;
 }
 .clients_blog{
     max-width: 260px;
@@ -517,5 +536,53 @@ color: #fff;
 }
 .client-text{
     color: #242424;
+    font-size: 14px;
     letter-spacing: 0.5px;
+}
+.clients_slider_title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1b1b1b;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.clients_slider_text{
+    margin-bottom: 30px;
+}
+.clients_slider_author{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1b1b1b;
+    float: right;
+}
+.clients_slider_inner .slick-btn{
+    top: auto;
+    bottom:-110px;
+}
+.clients_slider_inner .slick-next{
+    right: -35px;
+    
+}
+.clients_slider_inner .slick-prev{
+    right: 20px;
+    left: auto;
+}
+.footer_content{
+    background-color: #242424;
+    padding: 22px 0px 30px;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_map{
+    padding-top: 10px;
+}
+.footer_map iframe{
+    height: 250px;
+    max-width: 630px;
+    width: 100%;
+
 }
