@@ -1,0 +1,132 @@
+@media (max-width: 1120px){
+    .about_items{
+        display: block !important; 
+    }
+    .about_item{ 
+        max-width: 100% !important;
+        min-height: 375px;
+        margin-bottom: 20px;
+    }
+    .form_inner{
+        background-image: none !important;
+    }
+    .clients {
+        padding: 10px 0px 10px !;
+    }
+    .clients_inner{
+    display: block !important;
+}
+.clients_blog {
+    max-width: 100%!important;
+    margin-bottom: 60px;
+}
+.footer_map iframe{
+
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+}
+
+    
+}
+
+@media (max-width: 850px){
+.header_btn{
+float: none !important;
+text-align: center;
+display: block;
+}
+.header_contacts{
+text-align: center;
+}
+.header_btn:after{
+    display: none;
+}
+.header_btn-menu{
+    display: block !important;
+    font-size: 30px;
+}
+.clients_top, .about_top{
+    display: block !important;
+}
+.about_btn a {
+    float: right;
+}
+
+.menu ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    z-index: 50;
+}
+.menu li{
+    display: block;
+    
+}
+.menu a{
+    display: block;
+    background-color: #ffc222;
+    margin-right: 0 !important;
+    border: 0.5px solid #fff !important;
+    text-align: center;
+}
+.menu ul li{
+ display: block !important ; 
+font-family: 'Montserrat', sans-serif; 
+    
+    }
+.form_box_inner{
+        display: block !important;
+ }
+ .form_boxleft {
+    max-width: 100% !important;
+ }
+   .form_boxright {
+        max-width: 100% !important;
+        margin-left: 0px !important;
+
+   }
+   .form_box_inner button{
+       float: none !important;
+   }
+   .advatages_inner{
+    display: block !important;
+}
+.advatages_item{
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.clients_slider{
+    max-width: 100% !important;
+    margin-bottom: 90px;
+}
+
+
+}
+@media (max-width: 450px){
+   .slider .slick-btn{
+        display: none;
+    }
+
+
+}
+@media (max-width: 410px){
+    .header_btn:after{
+        display: none;
+    }
+    .header_phone{
+        margin-left: 30px;
+    }
+}
+@media (min-width: 850px){
+    .menu ul li{
+        display: inline-block !important ; 
+        font-family: 'Montserrat', sans-serif; 
+    
+    }
+
+}
