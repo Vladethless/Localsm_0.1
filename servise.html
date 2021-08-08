@@ -44,14 +44,40 @@
                         <div class="header_btn-menu">
                             <span class="icon-menu"></span>
                         </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Siding</a></li>
-                                <li><a href="#">Roofing</a></li>
-                                <li><a href="#">Windows</a></li>
-                                <li><a href="#">Contact</a></li>
+                            <ul class="menu_list">
+                                <li class="menu_link"><a href="#">Home</a></li>
+                                <li class="menu_link"><a href="#">About Us</a></li>
+                                <li>
+                                    <button onclick="myFunction()" class="dropbtn">Siding</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#">0</a>
+                                      <a href="#">0</a>
+                                      <a href="#">0</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button onclick="myFunction()" class="dropbtn">Roofing</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#">1</a>
+                                      <a href="#">1</a>
+                                      <a href="#">1</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button onclick="myFunction()" class="dropbtn">Windows</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#">2</a>
+                                      <a href="#">2</a>
+                                      <a href="#">2</a>
+                                    </div>
+                                </li>
+                                <li class="menu_link"><a href="#">Contact</a></li>
+
                             </ul>
+
+
+
+                            
                         
                     </nav>
                 </div>
@@ -59,20 +85,66 @@
         </div>
     </header>
     <section class="page-title">
-        <div style="background-image: url(/img/main_page_title.jpg)" cover class="img_ser"> 
-            <div id="breadcrumb_inner"  class="col col-xs-12">
+        <div style="background-image: url(/img/main_page_title.jpg)" cover class="img_ser">
+            <div id="breadcrumb_inner" class="col col-xs-12">
                 <h1 class="about_s">Sevises</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Sevises</li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sevises</li>
                     </ol>
-                  </nav>
-                
+                </nav>
+
             </div>
         </div> <!-- end row -->
-    </div> <!-- end container -->
-</section>        
+        </div> <!-- end container -->
+    </section>
+    <section class="project-detail">
+        <div class="container">
+            <!-- Upper Box -->
+            <div class="upper-box">
+                <div class="single-item-carousel owl-carousel owl-theme">
+                   <figure class="image"><img src="img/metal_1.jpg" alt=""></figure>                
+                </div>
+            </div>
+
+            <!-- Lower Content -->
+            <div class="lower-content">
+                <div class="row">
+                    <div class="text-column col-lg-12 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <h2>Project Description</h2>
+                            <p>Pleasure and praising pain was born and I will give you a complete account of the systems, and expound the actually teachings of the great explorer of the truth, the master-builder of human uts happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself pursues or desires to obtain pain of itself.</p>
+                            <h3>What We Did</h3>
+                            <p>Complete account of the systems and expound the actually teachings of the great explorer of the truth, the master-builder of human uts happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are painful anyone who loves or pursues nyone who loves or pursues.</p>
+                            <!-- Two Column -->
+                            <div class="two-column">
+                                <div class="row">
+                                    <div class="image-column col-xl-6 col-lg-12 col-md-12">
+                                        <figure class="image"><img src="img/metal_2.jpg" alt=""></a></figure>
+                                    </div>
+                                    <div class="text-column col-xl-6 col-lg-12 col-md-12">
+                                        <ul class="list-style-one">
+                                        <li>Engine oil level should be regularly checked Tyres have a minimum of 1.6mm of tread.</li>
+                                        <li>Ensure that the electrolyte level is correct Never remove the radiator when the engine.</li>
+                                        <li>Ensure that your vehicle's brake fluid is full Engine oil level should be regularly checked.</li>
+                                         <li>Sngine oil level should be regularly checked Tyres have a minimum of 1.6mm of tread. E lectrolyte level is correct Never remove.</li>
+                                        
+                                    </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Project Detail -->
     <footer class="footer">
         <div class="footer_content">
             <div class="container">
@@ -86,7 +158,7 @@
                         </a>
                         <ul class="footer_list">
                             <li><a class="footer_phone" href="tel:380963092145">+38 (096) 309 21 45</a></li>
-                            <li><a class="footer_email"  href="#">layout585@gmail.com</a></li>
+                            <li><a class="footer_email" href="#">layout585@gmail.com</a></li>
                             <li><a class="footer_adress" href="#">Киев, ул.Пушиной, 1</a></li>
                         </ul>
                     </div>
