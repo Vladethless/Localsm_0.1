@@ -8,22 +8,10 @@ $(function(){
     $('.header_btn-menu').on('click', function(){
         $('.menu ul').slideToggle();
     });
-
+ 
 });
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+ $(window).on('load', function() {
+  $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+});
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}

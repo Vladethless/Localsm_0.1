@@ -2,6 +2,77 @@
     box-sizing: border-box ;
     
 }
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #ffc222;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
 a{
     text-decoration: none;
     display: inline-block;
@@ -23,6 +94,7 @@ font-weight: 400;
 line-height: 18px;
 font-size: 14px;
 color: #5e5e5e;
+
 }
 .header{
     font-family: 'Montserrat', sans-serif; 
@@ -815,52 +887,224 @@ background-repeat: no-repeat;
 
     font-family: 'Montserrat', sans-serif;
 }
-/* Dropdown Button */
-.dropbtn {
-    display: block !important;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 36px;
-    color: #323232;
-    padding: 0px 16px;
-    margin-right: 12px;
-    border: 1px solid transparent;
-    transition: all .3s;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-}
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #ffc222;;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.project-detail{
     position: relative;
-    display: inline-block;
+    padding: 100px 0 85px;
+    background-image: url(../img/bg_pattern.jpg);
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.project-detail .upper-box {
+    position: relative;
+    margin-bottom: 40px;
 }
+.lower-content{
+    position: relative;
+}
+.row{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.project-detail .text-column .inner-column{
+    position: relative;
+    padding-right: 30px;
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+}
+.list-style-one {
+    position: relative;
     display: block;
+    margin-bottom: 30px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.mark {
+    font-weight: 400;
+    background-color: #fcf8e3;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px
+}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+/* nav */
+.nav {
+    list-style: none;
+}
+.nav li {
+    float: left;
+    position: relative;
+    background: #ffffff;
+}
+/* круглые края */
+.nav > li:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+.nav > li:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+/* блоки ссылок */
+.nav li a {
+    display: block !important;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+/* выпадающее меню */
+
+.sub-nav {
+    position: absolute;
+    border-top: 15px solid transparent;
+    left: -9999px;
+    list-style:none;
+    padding:0;
+    z-index: 90;
+    width:150px ;
+    /* display: none !important; */
+}
+/* make submenu reappear */
+.nav li:hover .sub-nav {
+    left: 0;
+}
+/* triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #eed085;
+    position: absolute;
+    margin-top: 5px;
+    left: -9999px;
+    
+}
+/* reappear */
+.nav li:hover .triangle {
+    left: 15px;
+}
+/* prevent multi line links */
+.sub-nav li {
+    white-space: pre-wrap;
+}
+/* закругленные края */
+.sub-nav > li:first-of-type {
+    border-radius: 5px 5px 0 0;
+}
+.sub-nav > li:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+/* верхний уровень при наведении */
+.nav > li:hover > a {
+    background: #ffc222;
+    transition: background ease .5s;
+}
+/* ссылки подменю */
+.sub-nav a {
+    font-size: 90%;
+    margin: 3px;
+    transition: background ease .3s;
+}
+.sub-nav a:hover {
+    background: #ffc222;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+.contact-info {
+    padding: 80px 20px 0px;
+    background: #3c3935;
+    background: #3c3935;
+    margin-top: 10px;
+    float: left;
+}
+.single-cta {
+    border-bottom: 1px solid;
+    float: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wave-divider {
+    width: 100%;
+    height: 60px;
+    display:block;    
+}
+.wave-parallax1 {
+    animation: wave-move1 10s linear infinite;
+}
+.wave-parallax2 {
+    animation: wave-move2 8s linear infinite;
+}
+.wave-parallax3 {
+    animation: wave-move3 6s linear infinite;
+}
+.wave-parallax4 {
+    animation: wave-move4 4s linear infinite;
+}
+@keyframes wave-move1 {
+    0% {
+        transform: translateX(85px);
+    }
+    100% {
+        transform: translateX(-90px);
+    }
+}
+@keyframes wave-move2 {
+    0% {
+        transform: translateX(-90px);
+    }
+    100% {
+        transform: translateX(85px);
+    }
+}
+@keyframes wave-move3 {
+    0% {
+        transform: translateX(85px);
+    }
+    100% {
+        transform: translateX(-90px);
+    }
+}
+@keyframes wave-move4 {
+    0% {
+        transform: translateX(-90px);
+    }
+    100% {
+        transform: translateX(85px);
+    }
+}
+.dark-block {
+    background: #337AB7;
+    padding: 50px 0;
+    font-size: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #FFF;
+}
+.dark-bg {
+    background: #337AB7;
+}
+.light-block {
+    background: #FFF;
+    padding: 50px 0;
+    font-size: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #337AB7;
+}
+
+
+
+
+
+ 
+

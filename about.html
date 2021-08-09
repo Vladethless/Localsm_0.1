@@ -21,6 +21,12 @@
 </head>
 
 <body>
+        <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
     <header class="header">
         <div class="header_top">
             <div class="container">
@@ -44,20 +50,42 @@
                         <div class="header_btn-menu">
                             <span class="icon-menu"></span>
                         </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Siding</a></li>
-                                <li><a href="#">Roofing</a></li>
-                                <li><a href="#">Windows</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+                        <ul class="nav">
+                            <li class="menu_link"><a href="index.html">Home</a></li>
+                            <li class="menu_link"><a href="about.html">About Us</a></li>
+                            <li><a href="" class="mark">Siding</a>
+                                <i class="triangle"></i>
+                                <ul class="sub-nav">
+                                    <li><a href="servise.html">Пункт 1 подменю</a></li>
+                                    <li><a href="servise.html">Пункт 2 подменю</a></li>
+                                    <li><a href="servise.html">Пункт 3 подменю</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="mark">Roofing</a>
+                                <i class="triangle"></i>
+                                <ul class="sub-nav">
+                                    <li><a href="servise.html">Пункт 1 подменю</a></li>
+                                    <li><a href="servise.html">Пункт 2 подменю</a></li>
+                                    <li><a href="servise.html">Пункт 3 подменю</a></li>
+                                </ul>
+                                <li><a href="" class="mark">Windows</a>
+                                    <i class="triangle"></i>
+                                    <ul class="sub-nav">
+                                        <li><a href="servise.html">Пункт 1 подменю</a></li>
+                                        <li><a href="servise.html">Пункт 2 подменю</a></li>
+                                        <li><a href="servise.html">Пункт 3 подменю</a></li>
+                                    </ul>
+                                </li>
+                            <li class="menu_link"><a href="contact.html">Contact</a></li>
+
+                        </ul>
                         
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    
     <section class="page-title">
         <div style="background-image: url(/img/main_page_title.jpg)" cover class="img_ser"> 
             <div id="breadcrumb_inner"  class="col col-xs-12">
@@ -72,7 +100,209 @@
             </div>
         </div> <!-- end row -->
     </div> <!-- end container -->
-</section>        
+</section>  
+<section class="about">
+    <div class="container">
+        <div class="about_top">
+            <div class="about_title-box">
+                <div class="about_title">Our services</div>
+                <div class="about_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur
+                    dolor ab quae voluptate exercitationem officiis quod.</div>
+            </div>
+            <div class="about_btn">
+                <a href="#">All about us !</a>
+            </div>
+        </div>
+        <div class="about_items">
+            <div class="about_item">
+                <img src="img/002-roof.png" alt="" srcset="">
+                <div class="about_item-title">Siding</div>
+                <div class="about_item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    aspernatur dolor ab quae voluptate exercitationem officiis quod.</div>
+                <div class="about_item-btn">
+                    <a class="about_item-link" href="">More details
+                    </a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="default_btn">
+                        Leave a request
+                    </a>
+                </div>
+            </div>
+            <div class="about_item">
+                <img src="img/003-window.png" alt="" srcset="">
+                <div class="about_item-title">Windows</div>
+                <div class="about_item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    aspernatur dolor ab quae voluptate exercitationem officiis quod.</div>
+                <div class="about_item-btn">
+                    <a class="about_item-link" href="">More details
+                    </a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="default_btn">
+                        Leave a request
+                    </a>
+                </div>
+            </div>
+            <div class="about_item">
+
+                <img src="img/001-parquet.png" alt="" srcset="">
+                <div class="about_item-title">Roofing</div>
+                <div class="about_item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    aspernatur dolor ab quae voluptate exercitationem officiis quod.</div>
+                <div class="about_item-btn">
+                    <a class="about_item-link" href="">More details
+                    </a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="default_btn">
+                        Leave a request
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="company">
+    <div class="container">
+        <div class="company_inner">
+            <div class="company_title">About our company </div>
+            <div class="company_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet blanditiis
+                voluptate dolore. Harum, doloribus autem pariatur possimus adipisci architecto nesciunt iste debitis
+                hic velit excepturi obcaecati molestias, quibusdam ipsum?</div>
+            <a href="#" class="default_btn">
+                Contact Us!
+            </a>
+
+        </div>
+</section>
+<section class="form">
+    <div class="container">
+        <div class="form_inner">
+            <div class="form_content">
+                <div class="form_top">
+                    <div class="form_title-box">
+                        <div class="form_title">Get a quote</div>
+                        <div class="form_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                            aspernatur dolor ab quae voluptate exercitationem officiis quod.</div>
+                    </div>
+                    <div class="form_box">
+                        <form>
+                            <div class="form_box_inner">
+                                <div class="form_boxleft">
+                                    <label>
+                                        Email
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Phone
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Full Name
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Servise
+                                        <select>
+                                            <option value=""></option>
+                                            <option value="">Siding</option>
+                                            <option value="">Roofing</option>
+                                            <option value="">Windows</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form_boxright">
+                                    <label>
+                                        Massage
+                                        <textarea></textarea>
+                                    </label>
+                                    <button class="default_btn" type="submit">Contact Us</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="advatages">
+    <div class="container">
+        <div class="advatages_inner">
+            <div class="advatages_item">
+                <div class="advatages_title">The best siding</div>
+                <div class="advatages_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deserunt
+                    aliquam ab dolore accusamus maxime fugiat maiores cum </div>
+            </div>
+            <div class="advatages_item">
+                <div class="advatages_title">The best roofing</div>
+                <div class="advatages_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deserunt
+                    aliquam ab dolore accusamus maxime fugiat maiores cum </div>
+            </div>
+            <div class="advatages_item">
+                <div class="advatages_title">The best windows</div>
+                <div class="advatages_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deserunt
+                    aliquam ab dolore accusamus maxime fugiat maiores cum </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="container">
+        <div class="clients_top">
+            <div class="clients_title-box">
+                <div class="clients_title">Our services</div>
+                <div class="clients_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur
+                    dolor ab quae voluptate exercitationem officiis quod.</div>
+            </div>
+        </div>
+        <div class="clients_inner">
+            <div class="clients_slider">
+                <div class="clients_slider_inner">
+                    <div class="clients_slider_item">
+                        <div class="clients_slider_title">Incredible and quick!</div>
+                        <div class="clients_slider_text">The staff was honest with me about the price and
+                            replacement schedule. The replacement of my siding was done with high quality. The new
+                            asphalt shingle siding looks great, and I would recommend this contractor.</div>
+                        <div class="clients_slider_author">Ryan G. Smith</div>
+                    </div>
+                    <div class="clients_slider_item">
+                        <div class="clients_slider_title">Incredible and quick!</div>
+                        <div class="clients_slider_text">The staff was honest with me about the price and
+                            replacement schedule. The replacement of my siding was done with high quality. The new
+                            asphalt shingle siding looks great, and I would recommend this contractor.</div>
+                        <div class="clients_slider_author">Ryan G. Smith</div>
+                    </div>
+                    <div class="clients_slider_item">
+                        <div class="clients_slider_title">Incredible and quick!</div>
+                        <div class="clients_slider_text">The staff was honest with me about the price and
+                            replacement schedule. The replacement of my siding was done with high quality. The new
+                            asphalt shingle siding looks great, and I would recommend this contractor.</div>
+                        <div class="clients_slider_author">Ryan G. Smith</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients_blog">
+                <div class="client_images">
+                    <img src="./img/choise_1.jpg" alt="">
+                    <div class="clients_date">
+                        <img src="./img/brick-wall.png" alt="">
+                    </div>
+                </div>
+                <div class="client_title">Metal roof</div>
+                <div class="client-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="clients_blog">
+                <div class="client_images">
+                    <img src="./img/choise_2.jpg" alt="">
+                    <div class="clients_date">
+                        <img src="./img/ladder.png" alt="">
+                    </div>
+                </div>
+                <div class="client_title">Wood siding</div>
+                <div class="client-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </div>
+</section>      
     <footer class="footer">
         <div class="footer_content">
             <div class="container">
