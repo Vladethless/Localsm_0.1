@@ -8,10 +8,11 @@ $(function(){
     $('.header_btn-menu').on('click', function(){
         $('.menu ul').slideToggle();
     });
- 
+    
+    $(window).on('load', function() {
+        $('.preloader').addClass("hide");
+      }); 
 });
- $(window).on('load', function() {
-  $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
-});
+
 
 
