@@ -810,7 +810,7 @@ color: #1b1b1b;
     height: 250px;
     position: relative;
     text-align: center;
-    background-image:url(/img/main_page_title.jpg);
+    background-image:url(../img/main_page_title.jpg);
 }
 .img_ser{
 width: 100%;
