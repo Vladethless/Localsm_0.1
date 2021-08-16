@@ -1,4 +1,5 @@
 @media (max-width: 1120px){
+
     .about_items{
         display: block !important; 
     }
@@ -43,9 +44,8 @@ text-align: center;
 .header_btn:after{
     display: none;
 }
-.header_btn-menu{
-    display: block !important;
-    font-size: 30px;
+.nav{
+    display: none;
 }
 .clients_top, .about_top{
     display: block !important;
@@ -53,24 +53,19 @@ text-align: center;
 .about_btn a {
     float: right;
 }
-
-.menu ul{
-    display: grid;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 20px;
-    z-index: 50;
+#menu-wrapper{
+    padding-left: 295px;
+}
+.menu-submenu{
+    font-size: 16px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid #dbdcd2;
 }
 
 
-.menu a{
 
-    background-color: #ffc222;
-    margin-right: 0 !important;
-    border: 0.5px solid #fff !important;
-    text-align: center;
-}
+
 
 .form_box_inner{
         display: block !important;
@@ -124,6 +119,11 @@ text-align: center;
     }
     .header_phone{
         margin-left: 30px;
+    }
+}
+@media (min-width: 1100px){
+    #menu-container{
+        display: none;
     }
 }
 
