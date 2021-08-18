@@ -330,8 +330,9 @@ background-image: url(../img/bg_pattern.jpg);
 .clients_title-box,
 .about_title-box{
     max-width: 520px;
-    padding-left: 140px;
+    padding-left: 130px;
     position: relative;
+    text-align: start;
 }
 .clients_title-box::before,
 .about_title-box::before{
@@ -446,6 +447,11 @@ color: #fff;
     padding: 45px 0px 45px;
     font-family: 'Montserrat', sans-serif;
     color: #1b1b1b;
+}
+
+.company_inner_ab_img img{
+    width:350px ;
+    height: auto;
 }
 .company_inner_ab{
     max-width: 545px;
@@ -819,7 +825,7 @@ color: #1b1b1b;
 .img_ser{
 width: 100%;
 position: absolute;
-height: 250px;
+max-height: 200px;
 background-size: cover;
 background-position: center;
 min-height: 250px;
@@ -828,11 +834,7 @@ background-repeat: no-repeat;
     }
 
 
-@media (max-width: 991px) {
-    .page-title {
-        height: 300px;
-    }
-}
+
 
 .page-title .container {
     height: 100%;
@@ -1136,11 +1138,17 @@ background-repeat: no-repeat;
 }
 .contact-pg-section .section-title-s3 p {
     font-size: 1.125rem;
-    margin: 0.8em 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .contact-pg-section .section-title-s3 h2 {
+color: #000000;
   }
   
   .contact-pg-section .submit-btn-wrapper {
     text-align: center;
+    font-size: 25px;
   }
   
   .contact-pg-section .submit-btn-wrapper button {
@@ -1150,6 +1158,9 @@ background-repeat: no-repeat;
     -o-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    width: 200px;
+    height: 50px;
+    background-color: #ffc222;
   }
   
   .contact-pg-section form {
@@ -1193,7 +1204,6 @@ background-repeat: no-repeat;
   .contact-pg-section form textarea {
     background: #fff;
     font-size: 16px;
-    font-size: 1rem;
     height: 55px;
     padding: 6px 15px;
     border: 2px solid #ebeff3;

@@ -125,5 +125,9 @@ text-align: center;
     #menu-container{
         display: none;
     }
+    .company_ab .container{
+        display: flex;
+        justify-content: space-between;
+        }
 }
 
