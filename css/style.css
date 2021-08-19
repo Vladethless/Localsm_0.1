@@ -128,8 +128,8 @@ color: #5e5e5e;
     clear: both;
     display: block;
 }
-.header_phone,
-.header_email{
+.header_adress,
+.header_phone{
  text-decoration: none;
  color: azure !important;
  font-size: 14px;
@@ -137,6 +137,7 @@ color: #5e5e5e;
  line-height: 45px;
  position: relative;
 }
+
 .header_phone{
     padding-left: 20px;
     padding-right: 30px;
@@ -148,12 +149,14 @@ color: #5e5e5e;
     left: 0;
     color: #ffc222;
 }
-.header_email{
+.header_adress
+{
     padding-left: 24px;
 }
-.header_email:before{
+
+.header_adress:before{
     font-family: 'icomoon' !important;
-    content: "\e945";
+    content: "\e948";
     position: absolute;
     left: 0;
     color: #ffc222;
@@ -222,6 +225,10 @@ color: #5e5e5e;
 .image img{
     height: auto;
     width: 100%;
+}
+.two-column img{
+    width: 500px;
+    height: auto;
 }
 .slider{
     background-image:url(../img/slider_fon.jpg);
@@ -923,7 +930,7 @@ background-repeat: no-repeat;
 
 .project-detail{
     position: relative;
-    padding: 100px 0 85px;
+    padding: 50px 0 20px;
     background-image: url(../img/bg_pattern.jpg);
 }
 .project-detail .upper-box {
@@ -1548,6 +1555,9 @@ a { text-decoration: none; color: black;}
 #menu-container .menu-list li:first-of-type {
     border-top: 0;
 }
+.accordion-content .head{
+    line-height: 2em;
+}
 
 .accordion-toggle, .accordion-content {
     cursor: pointer;
@@ -1581,7 +1591,7 @@ a { text-decoration: none; color: black;}
 }
 
 .accordion-toggle.active-tab {
-  background: yellowgreen;
+  background: #ffc222;
   transition: all 0.3s ease;
 }
 .accordion-toggle a.active:before {
@@ -1594,6 +1604,15 @@ a { text-decoration: none; color: black;}
     background: #fff !important;
     opacity: 0;
 }
+.menu-link{
+    width: 100%;
+}
+.two-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 
