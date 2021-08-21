@@ -34,12 +34,6 @@
       margin-right: auto;
     }
     
-
-    .two-column img{
-        width: 345px !important;
-        height: auto;
-
-    }   
 }
 @media (min-width: 1100px){
     #menu-container{
@@ -52,6 +46,43 @@
 
 
 }
+@media screen and (min-width: 992px) {
+    .page-title .container {
+        padding-top: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .page-title h2 {
+        font-size: 45px;
+    }
+}
+@media (max-width: 991px) {
+    .page-title p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 991px) {
+    .contact-pg-section .contact-map {
+      margin-top: 80px;
+    }
+  }
+  @media (max-width: 991px) {
+    .contact-pg-section .contact-info .icon i {
+      font-size: 40px;
+      font-size: 2.5rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .contact-pg-section .contact-info > div {
+      padding: 60px 35px 40px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 991px) {
+    .contact-pg-section .contact-info {
+      margin-top: 60px;
+    }
+  }
 @media (max-width: 850px){
 .header_btn{
 float: none !important;
@@ -120,10 +151,73 @@ text-align: center;
     width:150px ;
     display: none !important;
 }
-
+@media (max-width: 767px) {
+    .contact-pg-section .contact-info .icon i {
+      font-size: 35px;
+      font-size: 2.1875rem;
+    }
+  }
+@media (max-width: 767px) {
+    .contact-validation-active #success,
+    .contact-validation-active #error {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    .contact-pg-section .contact-map {
+      height: 350px;
+      margin-top: 70px;
+    }
+  }
 
 }
+@media (max-width: 767px) {
+    .contact-pg-section form input,
+    .contact-pg-section form textarea {
+      height: 45px;
+      border: 1px solid #ebeff3;
+    }
+  }
+  @media (max-width: 767px) {
+    .contact-pg-section form div {
+      padding: 0 0 15px 15px;
+    }
+  }
+@media (max-width: 767px) {
+    .contact-pg-section .contact-info {
+      margin-top: 50px;
+    }
+  }
+@media (max-width: 767px) {
+    .page-title h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-pg-section .contact-info > div {
+      width: 100%;
+      padding: 40px 25px 20px;
+      border-left: 0;
+      float: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .contact-pg-section form {
+      margin: 0 0 0 -15px;
+    }
+  }
 
+@media (max-width: 767px) {
+    .page-title p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .contact-pg-section form .one-third-col {
+      width: 100%;
+      float: left;
+    }
+  }
 @media (max-width: 450px){
    .slider .slick-btn{
         display: none;
