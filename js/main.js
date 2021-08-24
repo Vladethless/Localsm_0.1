@@ -4,6 +4,7 @@ $(function(){
         prevArrow: '<button type = "button" class="slick-btn slick-prev"></ button>',
         infinite: false,
     });
+
     $('select').styler();
     $('.header_btn-menu').on('click', function(){
         $('.menu ul').slideToggle();
@@ -26,6 +27,11 @@ $(function() {
   
       $("body").toggleClass("overflow-hidden");
     });
+    $('.slider_inner, .product_slider_inner').slick({
+      nextArrow: '<button type = "button" class="slick-btn slick-next"></ button>',
+      prevArrow: '<button type = "button" class="slick-btn slick-prev"></ button>',
+      infinite: false,
+  });
   
     $(".menu-list").find(".accordion-toggle").click(function() {
       $(this).next().toggleClass("open").slideToggle("fast");
@@ -34,7 +40,9 @@ $(function() {
       $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
       $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
     });
+    
   });
+  
 
 
 
